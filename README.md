@@ -28,8 +28,6 @@
 
 ## 🛠️ MIS CERTIFICACIONES DESTACADAS
 
-Para que tus certificados se vean directamente aquí, he preparado este bloque:
-
 | Certificación | Emisor | Enlace |
 | :--- | :--- | :--- |
 | **Ethical Hacker** | Cisco Academy | [Ver PDF](./Certificaciones/EthicalHackerUpdate20260410-31-tjkury.pdf) |
@@ -43,6 +41,7 @@ Para que tus certificados se vean directamente aquí, he preparado este bloque:
 | :--- | :--- | :--- |
 | Nmap | Metasploit | Wireshark |
 | Python | Hydra | Firewall Config |
+| Burp Suite | Sqlmap | Kali Linux |
 
 ---
 
