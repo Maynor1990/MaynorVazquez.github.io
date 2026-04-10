@@ -1,14 +1,14 @@
 # 🖥️ [ SYSTEM STATUS: ONLINE ]
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Shellsharks/assets/main/pfp/Shellsharks_PFP_Circle.png" width="140" alt="Mynor Vazquez Sec">
+  <img src="https://raw.githubusercontent.com/Shellsharks/assets/main/pfp/Shellsharks_PFP_Circle.png" width="140" alt="Maynor Vazquez Sec">
   <br>
   <img src="https://img.shields.io/badge/STATUS-ESTUDIANTE-00ff00?style=for-the-badge&logo=unadm&logoColor=white" />
   <img src="https://img.shields.io/badge/DEPT-ING._INDUSTRIAL-007bff?style=for-the-badge" />
   <img src="https://img.shields.io/badge/OS-KALI_LINUX-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" />
 </p>
 
-<h1 align="center"><font color="#00ff00">Mynor_Vazquez_Sec</font></h1>
+<h1 align="center"><font color="#00ff00">Maynor_Vazquez_Sec</font></h1>
 
 ---
 
