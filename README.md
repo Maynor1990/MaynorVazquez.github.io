@@ -1,4 +1,33 @@
-# 🖥️ [ SYSTEM STATUS: ONLINE ]
+# 🖥️ [ SYSTEM STATUS: ONLINE ]<p align="center">
+  <img src="https://img.shields.io/badge/🛡️_Security-Researcher-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/⚙️_Industrial-Engineer-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/🐍_Python_Dev-yellow?style=for-the-badge&logo=python&logoColor=white" />
+</p>
+
+---
+
+### 🛡️ Arsenal de Ciberseguridad & Redes
+| Categoría | Herramientas & Tecnologías |
+| :--- | :--- |
+| **🔍 Reconocimiento** | `Nmap` `Zenmap` `Netdiscover` `Wireshark` `ARP-Scan` |
+| **🔓 Pentesting** | `Metasploit` `Snmpcheck` `Information Gathering` `Evasión de Firewalls` |
+| **🌐 Networking** | `Cisco Packet Tracer` `TCP/IP` `Protocolos UDP/ICMP` `VPN/Tunnels` |
+| **💻 Desarrollo** | `Python (Automation)` `FastAPI` `HTML5/CSS3` `Kali Linux` |
+
+---
+
+### 🛰️ Últimas Misiones (Laboratorios)
+> **Situación:** Detección de activos en redes con alta restricción de firewall.
+- **Caso 192.168.0.249:** Implementación de técnicas de Capa 2 (ARP) tras bloqueo de Capa 3/4. 
+- **Evasión:** Uso exitoso de fragmentación de paquetes y manipulación de puertos de origen para bypass de reglas `DROP`.
+- **Documentación:** Reporte generado automáticamente en el repositorio de bitácoras.
+
+---
+
+### 📊 Especialización Industrial
+* **Calidad:** 14 años de experiencia en Inspección y Control de Calidad (Stryker).
+* **Optimización:** Aplicación de metodologías industriales a la seguridad informática (Hardening de sistemas).
+* **Formación:** Ingeniería Industrial / Telemática (UnADM) | Cisco Networking Academy.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Shellsharks/assets/main/pfp/Shellsharks_PFP_Circle.png" width="140" alt="Maynor Vazquez Sec">
