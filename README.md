@@ -51,9 +51,6 @@
   <img src="ethical_hacker_cert.jpg" width="48%" style="border: 4px solid #00ff00; border-radius: 10px; filter: drop-shadow(0 0 10px #00ff00);" alt="Cisco Ethical Hacker">
   <img src="cybersecurity_cert.jpg" width="48%" style="border: 4px solid #007bff; border-radius: 10px; filter: drop-shadow(0 0 10px #007bff);" alt="Introduction to Cybersecurity">
 </p>
-<p align="center">
-  <font color="#00ff00"><b>Ethical Hacker Certification</b></font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#007bff"><b>Introduction to Cybersecurity</b></font>
-</p>
 
 ---
 
@@ -92,7 +89,7 @@
 
 ```bash
 [root@mynor-sec-lab ~]# tail -n 5 log_actividad.txt
-[2026-04-10] CONFIG: Migración a Modo Oscuro (Midnight) completada.
+[2026-04-10] CONFIG: Migración a Modo Oscuro completada.
 [2026-04-10] UPDATE: Estructura de columnas laterales activada.
 [2026-04-10] DEPLOY: Sección de Cyber-Tips integrada al dashboard.
 [2026-04-10] STATUS: Sistema optimizado para visualización completa.
