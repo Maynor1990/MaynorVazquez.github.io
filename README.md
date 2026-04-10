@@ -19,10 +19,10 @@ Selecciona una sección para explorar el laboratorio técnico:
 
 ## ⚡ RECENT_ACTIVITY
 
-### [10-04-2026] :: Optimización de Interfaz
+### [10-04-2026] :: Optimización de Infraestructura
+- [x] Corrección total de rutas de navegación (Guiones medios aplicados).
 - [x] Consolidación de certificados en la página de inicio.
-- [x] Depuración de estructura de directorios (Eliminación de redundancias).
-- [x] Corrección de rutas de navegación para evitar errores 404.
+- [x] Verificación de estructura de archivos.
 
 ---
 
