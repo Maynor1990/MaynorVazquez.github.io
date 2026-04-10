@@ -1,2 +1,2 @@
 # MaynorVazquez.github.io
-"Estudiante de Ingeniería Industrial (UnADM) | Entusiasta de la Ciberseguridad y Ethical Hacking | Automatización con Python."
+"Portfolio de Ciberseguridad y Proyectos de Ingeniería | Documentación de laboratorios y scripts en Python.
