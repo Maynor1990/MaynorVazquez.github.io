@@ -9,27 +9,26 @@
 
 ## 📂 DIRECTORY_STRUCTURE
 
-Selecciona una sección para explorar el laboratorio:
+Selecciona una sección para explorar el laboratorio técnico:
 
-* 📁 **[./Bitacora-Diaria](./Bitacora-Diaria)** - Notas y progreso diario.
-* 🛡️ **[./Writeups-Pentesting](./Writeups_Pentesting)** - Reportes de auditoría.
-* 🐍 **[./Python-Scripts](./Python_Scripts)** - Herramientas y automatización.
-* 🎖️ **[./Certificaciones](./Certificaciones)** - Repositorio de credenciales.
+* 📁 **[./Bitacora-Diaria](./Bitacora-Diaria)** - Notas y progreso de estudio.
+* 🛡️ **[./Writeups-Pentesting](./Writeups-Pentesting)** - Reportes de auditoría y análisis.
+* 🐍 **[./Python-Scripts](./Python-Scripts)** - Herramientas y automatización.
 
 ---
 
 ## ⚡ RECENT_ACTIVITY
 
-### [10-04-2026] :: Optimización de Infraestructura
-- [x] Corrección de rutas de navegación (Eliminación de errores 404).
-- [x] Centralización de certificados en la página de inicio.
-- [x] Sincronización de carpetas con el repositorio de GitHub.
+### [10-04-2026] :: Optimización de Interfaz
+- [x] Consolidación de certificados en la página de inicio.
+- [x] Depuración de estructura de directorios (Eliminación de redundancias).
+- [x] Corrección de rutas de navegación para evitar errores 404.
 
 ---
 
-## 🎖️ MIS CERTIFICACIONES DESTACADAS
+## 🎖️ CREDENCIALES OFICIALES
 
-Aquí puedes visualizar mis credenciales oficiales de **Cisco Networking Academy**:
+Mis certificaciones de **Cisco Networking Academy** verificadas:
 
 <p align="center">
   <img src="ethical_hacker_cert.jpg" width="600" style="border: 2px solid #00ff00; margin: 10px;" alt="Ethical Hacker Cisco">
