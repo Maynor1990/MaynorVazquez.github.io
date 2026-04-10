@@ -1,57 +1,93 @@
 # 🖥️ [ SYSTEM STATUS: ONLINE ]
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Shellsharks/assets/main/pfp/Shellsharks_PFP_Circle.png" width="120" alt="Mynor Vazquez Sec">
+  <img src="https://raw.githubusercontent.com/Shellsharks/assets/main/pfp/Shellsharks_PFP_Circle.png" width="140" alt="Mynor Vazquez Sec">
   <br>
   <img src="https://img.shields.io/badge/STATUS-ESTUDIANTE-00ff00?style=for-the-badge&logo=unadm&logoColor=white" />
   <img src="https://img.shields.io/badge/DEPT-ING._INDUSTRIAL-007bff?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/OS-KALI_LINUX-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" />
 </p>
 
 <h1 align="center"><font color="#00ff00">Mynor_Vazquez_Sec</font></h1>
 
 ---
 
-## 👨‍💻 PERFIL DEL ESTUDIANTE
-* **🎓 Institución:** UnADM
-* **⚙️ Carrera:** Estudiante de Ingeniería Industrial
-* **🛡️ Especialidad:** Ciberseguridad y Ethical Hacking
+## 🛰️ GLOBAL OVERVIEW
 
-> <font color="#00ff00"><b>"La seguridad no es un producto, es un proceso."</b></font>
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>👨‍💻 PERFIL ACADÉMICO</h3>
+      <ul>
+        <li><b>Institución:</b> UnADM</li>
+        <li><b>Carrera:</b> Ingeniería Industrial</li>
+        <li><b>Matrícula:</b> ES251101986</li>
+        <li><b>Especialidad:</b> Seguridad Ofensiva</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📂 DIRECTORIO DE ACCESO</h3>
+      <ul>
+        <li>📁 <a href="./Bitacora-Diaria"><font color="#00ff00">Bitácora Diaria</font></a></li>
+        <li>🛡️ <a href="./Writeups-Pentesting"><font color="#00ff00">Writeups & CTFs</font></a></li>
+        <li>🐍 <a href="./Python-Scripts"><font color="#00ff00">Scripts Automatizados</font></a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 📂 LABORATORIO DE RECURSOS
-
-| Sección | Descripción | Enlace |
-| :--- | :--- | :---: |
-| 📁 **Bitácora** | <font color="#00ff00">Progreso Diario</font> | [Abrir](./Bitacora-Diaria) |
-| 🛡️ **Writeups** | <font color="#00ff00">Análisis Técnico</font> | [Ver](./Writeups-Pentesting) |
-| 🐍 **Scripts** | <font color="#00ff00">Ciber-Herramientas</font> | [Explorar](./Python-Scripts) |
-
----
-
-## 🎖️ CERTIFICACIONES OFICIALES
+## 🎖️ CERTIFICACIONES OFICIALES (CISCO ACADEMY)
 
 <p align="center">
-  <img src="ethical_hacker_cert.jpg" width="550" style="border: 4px solid #00ff00; border-radius: 15px; filter: drop-shadow(0 0 15px #00ff00);" alt="Cisco Ethical Hacker">
-  <br>
-  <font color="#00ff00"><b>🛡️ Ethical Hacker - Cisco Networking Academy</b></font>
+  <img src="ethical_hacker_cert.jpg" width="48%" style="border: 4px solid #00ff00; border-radius: 10px; filter: drop-shadow(0 0 10px #00ff00);" alt="Cisco Ethical Hacker">
+  <img src="cybersecurity_cert.jpg" width="48%" style="border: 4px solid #007bff; border-radius: 10px; filter: drop-shadow(0 0 10px #007bff);" alt="Introduction to Cybersecurity">
 </p>
-
-<br>
-
 <p align="center">
-  <img src="cybersecurity_cert.jpg" width="550" style="border: 4px solid #007bff; border-radius: 15px; filter: drop-shadow(0 0 15px #007bff);" alt="Introduction to Cybersecurity">
-  <br>
-  <font color="#007bff"><b>🌐 Introduction to Cybersecurity - Cisco Academy</b></font>
+  <font color="#00ff00"><b>Ethical Hacker Certification</b></font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#007bff"><b>Introduction to Cybersecurity</b></font>
 </p>
 
 ---
 
-## 🛠️ ARSENAL TÉCNICO (TOOLBOX)
+## 🛠️ ARSENAL TÉCNICO & HABILIDADES
+
+A continuación se detalla el conjunto de herramientas y lenguajes utilizados en este laboratorio:
+
+<table width="100%">
+  <tr>
+    <th>Reconocimiento</th>
+    <th>Explotación</th>
+    <th>Post-Explotación</th>
+    <th>Desarrollo</th>
+  </tr>
+  <tr>
+    <td>Nmap / Zenmap</td>
+    <td>Metasploit Framework</td>
+    <td>Privilege Escalation</td>
+    <td>Python 3 / Bash</td>
+  </tr>
+  <tr>
+    <td>Wireshark</td>
+    <td>Hydra (Brute Force)</td>
+    <td>Data Exfiltration</td>
+    <td>Git / GitHub</td>
+  </tr>
+  <tr>
+    <td>Burp Suite</td>
+    <td>Sqlmap</td>
+    <td>Network Persistence</td>
+    <td>Linux SysAdmin</td>
+  </tr>
+</table>
+
+---
+
+## 💻 CONSOLA DE ACTIVIDAD RECIENTE
 
 ```bash
-# Consola de auditoría v2.0
-[+] Recon: Nmap, Wireshark, Zenmap
-[+] Exploit: Metasploit, Hydra, Sqlmap
-[+] OS: Kali Linux, VirtualBox, Python 3
+[root@mynor-sec-lab ~]# tail -n 5 log_actividad.txt
+[2026-04-10] CONFIG: Migración a Modo Oscuro completada exitosamente.
+[2026-04-10] UPDATE: Estructura de tablas expandida para visualización 16:9.
+[2026-04-10] DEPLOY: Certificaciones Cisco integradas en paralelo.
+[2026-04-10] STATUS: Sistema optimizado para visualización de escritorio.
