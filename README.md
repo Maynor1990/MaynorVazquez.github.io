@@ -1,22 +1,22 @@
 # 🖥️ [ SYSTEM STATUS: ONLINE ]
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Shellsharks/assets/main/pfp/Shellsharks_PFP_Circle.png" width="140" alt="Maynor Vazquez Sec">
+  <img src="https://raw.githubusercontent.com/Shellsharks/assets/main/pfp/Shellsharks_PFP_Circle.png" width="140" alt="Mynor Vazquez Sec">
   <br>
   <img src="https://img.shields.io/badge/STATUS-ESTUDIANTE-00ff00?style=for-the-badge&logo=unadm&logoColor=white" />
   <img src="https://img.shields.io/badge/DEPT-ING._INDUSTRIAL-007bff?style=for-the-badge" />
   <img src="https://img.shields.io/badge/OS-KALI_LINUX-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" />
 </p>
 
-<h1 align="center"><font color="#00ff00">Maynor_Vazquez_Sec</font></h1>
+<h1 align="center"><font color="#00ff00">Mynor_Vazquez_Sec</font></h1>
 
 ---
 
-## 🛰️ GLOBAL OVERVIEW
+## 🛰️ GLOBAL OVERVIEW & SEC-TIPS
 
 <table width="100%">
   <tr>
-    <td width="50%" valign="top">
+    <td width="65%" valign="top">
       <h3>👨‍💻 PERFIL ACADÉMICO</h3>
       <ul>
         <li><b>Institución:</b> UnADM</li>
@@ -24,14 +24,21 @@
         <li><b>Matrícula:</b> ES251101986</li>
         <li><b>Especialidad:</b> Seguridad Ofensiva</li>
       </ul>
-    </td>
-    <td width="50%" valign="top">
       <h3>📂 DIRECTORIO DE ACCESO</h3>
       <ul>
         <li>📁 <a href="./Bitacora-Diaria"><font color="#00ff00">Bitácora Diaria</font></a></li>
         <li>🛡️ <a href="./Writeups-Pentesting"><font color="#00ff00">Writeups & CTFs</font></a></li>
         <li>🐍 <a href="./Python-Scripts"><font color="#00ff00">Scripts Automatizados</font></a></li>
       </ul>
+    </td>
+    <td width="35%" valign="top" style="border-left: 1px solid #444; padding-left: 15px;">
+      <h3>🛡️ CYBER-TIPS</h3>
+      <p>⚠️ <b>MFA Siempre:</b> Activa doble factor en todo.</p>
+      <p>🔑 <b>Pass Managers:</b> Usa Bitwarden o Keepass.</p>
+      <p>📡 <b>VPN:</b> Nunca uses Wi-Fi pública sin cifrado.</p>
+      <p>📂 <b>Backups:</b> Respalda offline (Regla 3-2-1).</p>
+      <p>🔍 <b>Phishing:</b> Revisa enlaces antes de dar click.</p>
+      <p>🚫 <b>Zero Trust:</b> No confíes, verifica siempre.</p>
     </td>
   </tr>
 </table>
@@ -51,8 +58,6 @@
 ---
 
 ## 🛠️ ARSENAL TÉCNICO & HABILIDADES
-
-A continuación se detalla el conjunto de herramientas y lenguajes utilizados en este laboratorio:
 
 <table width="100%">
   <tr>
@@ -87,7 +92,7 @@ A continuación se detalla el conjunto de herramientas y lenguajes utilizados en
 
 ```bash
 [root@mynor-sec-lab ~]# tail -n 5 log_actividad.txt
-[2026-04-10] CONFIG: Migración a Modo Oscuro completada exitosamente.
-[2026-04-10] UPDATE: Estructura de tablas expandida para visualización 16:9.
-[2026-04-10] DEPLOY: Certificaciones Cisco integradas en paralelo.
-[2026-04-10] STATUS: Sistema optimizado para visualización de escritorio.
+[2026-04-10] CONFIG: Migración a Modo Oscuro (Midnight) completada.
+[2026-04-10] UPDATE: Estructura de columnas laterales activada.
+[2026-04-10] DEPLOY: Sección de Cyber-Tips integrada al dashboard.
+[2026-04-10] STATUS: Sistema optimizado para visualización completa.
