@@ -23,7 +23,7 @@
 * **⚙️ Carrera:** Ingeniería Industrial
 * **🛡️ Especialidad:** Ciberseguridad y Ethical Hacking
 
-> <font color="#00ff00">"La seguridad no es un producto, es un proceso."</font>
+> <font color="#00ff00"><b>"La seguridad no es un producto, es un proceso."</b></font>
 
 ---
 
@@ -31,16 +31,16 @@
 
 | Sección | Descripción | Enlace |
 | :--- | :--- | :---: |
-| 📁 **Bitácora** | <font color="#00ff00">Seguimiento diario</font> | [Ir](./Bitacora-Diaria) |
+| 📁 **Bitácora** | <font color="#00ff00">Notas de aprendizaje</font> | [Explorar](./Bitacora-Diaria) |
 | 🛡️ **Writeups** | <font color="#00ff00">Reportes técnicos</font> | [Ver](./Writeups-Pentesting) |
-| 🐍 **Scripts** | <font color="#00ff00">Automatización</font> | [Explorar](./Python-Scripts) |
+| 🐍 **Scripts** | <font color="#00ff00">Automatización Python</font> | [Abrir](./Python-Scripts) |
 
 ---
 
-## 🎖️ CERTIFICACIONES OFICIALES
+## 🎖️ CERTIFICACIONES DESTACADAS
 
 <p align="center">
-  <img src="ethical_hacker_cert.jpg" width="500" style="border: 5px solid #00ff00; border-radius: 15px; box-shadow: 0 0 20px #00ff00;" alt="Cisco Ethical Hacker">
+  <img src="ethical_hacker_cert.jpg" width="550" style="border: 4px solid #00ff00; border-radius: 15px; filter: drop-shadow(0 0 10px #00ff00);" alt="Cisco Ethical Hacker">
   <br>
   <font color="#00ff00"><b>🛡️ Ethical Hacker - Cisco Networking Academy</b></font>
 </p>
@@ -48,7 +48,7 @@
 <br>
 
 <p align="center">
-  <img src="cybersecurity_cert.jpg" width="500" style="border: 5px solid #007bff; border-radius: 15px; box-shadow: 0 0 20px #007bff;" alt="Introduction to Cybersecurity">
+  <img src="cybersecurity_cert.jpg" width="550" style="border: 4px solid #007bff; border-radius: 15px; filter: drop-shadow(0 0 10px #007bff);" alt="Introduction to Cybersecurity">
   <br>
   <font color="#007bff"><b>🌐 Introduction to Cybersecurity - Cisco Academy</b></font>
 </p>
@@ -58,7 +58,7 @@
 ## 🛠️ ARSENAL TÉCNICO (TOOLBOX)
 
 ```bash
-# Consola de herramientas v1.0
+# Entorno de pruebas v2.0 (Dark Mode Optimized)
 [+] Recon: Nmap, Wireshark, Zenmap
 [+] Exploit: Metasploit, Hydra, Sqlmap
-[+] System: Kali Linux, VirtualBox, Python 3
+[+] OS: Kali Linux, VirtualBox, Python 3
