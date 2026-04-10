@@ -21,7 +21,7 @@
 - [x] Configuración de repositorio principal y GitHub Pages.
 - [x] Definición de identidad visual estilo Terminal.
 - [x] Documentar primer reporte de auditoría (Nmap).
-- [ ] Desarrollar script de automatización en Python.
+- [x] Desarrollar script de automatización en Python (Generador de Reportes).
 
 ---
 
