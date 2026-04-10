@@ -9,7 +9,7 @@
 
 ## 📂 DIRECTORY_STRUCTURE
 
-* 📁 **[./Bitacora_Diaria](./Bitacora_Diaria)** - Notas de aprendizaje.
+* 📁 **[./Bitacora-Diaria](./Bitacora-Diaria)** - Notas de aprendizaje.
 * 🛡️ **[./Writeups_Pentesting](./Writeups_Pentesting)** - Reportes técnicos.
 * 🐍 **[./Python_Scripts](./Python_Scripts)** - Automatización.
 * 🎖️ **[./Certificaciones](./Certificaciones)** - Mis logros oficiales.
@@ -27,8 +27,6 @@
 ---
 
 ## 🎖️ MIS CERTIFICACIONES DESTACADAS
-
-Aquí puedes ver mis diplomas directamente:
 
 <p align="center">
   <img src="ethical_hacker_cert.jpg" width="600" style="border: 2px solid #00ff00; margin: 10px;" alt="Cisco Ethical Hacker">
