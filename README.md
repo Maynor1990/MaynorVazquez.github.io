@@ -25,9 +25,9 @@
 ---
 
 ### 📊 Especialización Industrial
-* **Calidad:** 14 años de experiencia en Inspección y Control de Calidad (Stryker).
+* **Calidad:** 14 años de experiencia en Inspección y Control de Calidad .
 * **Optimización:** Aplicación de metodologías industriales a la seguridad informática (Hardening de sistemas).
-* **Formación:** Ingeniería Industrial / Telemática (UnADM) | Cisco Networking Academy.
+* **Formación:** Ingeniería Industrial  | Cisco Networking Academy.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Shellsharks/assets/main/pfp/Shellsharks_PFP_Circle.png" width="140" alt="Maynor Vazquez Sec">
