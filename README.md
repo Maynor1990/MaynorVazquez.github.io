@@ -8,20 +8,20 @@
 
 ## 📂 DIRECTORY_STRUCTURE
 
-* **[./Bitacora_Diaria](https://github.com/Maynor1990/MaynorVazquez.github.io/tree/main/Bitacora_Diaria)** - Seguimiento diario de aprendizaje.
-* **[./Writeups_Pentesting](https://github.com/Maynor1990/MaynorVazquez.github.io/tree/main/Writeups_Pentesting)** - Reportes de auditoría y análisis técnicos.
-* **[./Python_Scripts](https://github.com/Maynor1990/MaynorVazquez.github.io/tree/main/Python_Scripts)** - Automatización y herramientas propias.
-* **[./Certificaciones](https://github.com/Maynor1990/MaynorVazquez.github.io/tree/main/Certificaciones)** - Logros académicos y formación continua.
+* **[./Bitacora_Diaria](./Bitacora_Diaria)** - Seguimiento diario de aprendizaje.
+* **[./Writeups_Pentesting](./Writeups_Pentesting)** - Reportes de auditoría y análisis técnicos.
+* **[./Python_Scripts](./Python_Scripts)** - Automatización y herramientas propias.
+* **[./Certificaciones](./Certificaciones)** - Logros académicos y formación continua.
 
 ---
 
 ## ⚡ RECENT_ACTIVITY
 
-### [09-04-2026] :: Deploy de Infraestructura Digital
-- [x] Configuración de repositorio principal y GitHub Pages.
-- [x] Definición de identidad visual estilo Terminal.
-- [x] Documentar primer reporte de auditoría (Nmap).
-- [x] Desarrollar script de automatización en Python (Generador de Reportes).
+### [10-04-2026] :: Infraestructura y Certificaciones
+- [x] Despliegue de portafolio en GitHub Pages.
+- [x] Carga de certificados oficiales de Cisco (Ethical Hacker & Cybersecurity).
+- [x] Creación de script automatizado para reportes.
+- [ ] Documentar práctica de análisis de vulnerabilidades.
 
 ---
 
@@ -31,11 +31,12 @@
 | :--- | :--- | :--- |
 | Nmap | Metasploit | Wireshark |
 | Python | Hydra | Firewall Config |
+
 ---
 
 ## 📟 CONTACT_ME
 - **Location:** México 🇲🇽
-- **Professional Status:** Estudiante de Ingeniería Industrial
+- **Status:** Estudiante de Ingeniería Industrial
 - **GitHub:** [Maynor1990](https://github.com/Maynor1990)
 
 ---
