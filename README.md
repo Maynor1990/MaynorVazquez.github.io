@@ -114,11 +114,10 @@
 
 ---
 
-## 💻 CONSOLA DE ACTIVIDAD RECIENTE
-
+### 🖥️ LOG DE OPERACIONES (ESTADO DEL SISTEMA)
 ```bash
-[root@mynor-sec-lab ~]# tail -n 5 log_actividad.txt
-[2026-04-10] CONFIG: Migración a Modo Oscuro completada.
-[2026-04-10] UPDATE: Estructura de columnas laterales activada.
-[2026-04-10] DEPLOY: Sección de Cyber-Tips integrada al dashboard.
-[2026-04-10] STATUS: Sistema optimizado para visualización completa.
+[2026-04-10 14:00] 🟢 DEPLOY: Sección de Cyber-Tips integrada al dashboard.
+[2026-04-10 14:15] 🔵 UPDATE: Estructura de columnas laterales activada.
+[2026-04-10 14:30] 🌑 CONFIG: Migración a Modo Oscuro completada exitosamente.
+[2026-04-10 14:45] 🛡️ STATUS: Sistema optimizado para auditoría de red (Nmap/ARP).
+[2026-04-10 15:00] 🛰️ SCANNING: Monitoreo pasivo de red local en progreso...
