@@ -28,12 +28,10 @@
 
 ## 🎖️ MIS CERTIFICACIONES DESTACADAS
 
-Aquí puedes ver mis diplomas directamente. Haz clic en las imágenes para ver el PDF original.
+Aquí puedes ver mis diplomas directamente:
 
 <p align="center">
-  <a href="./Certificaciones/EthicalHackerUpdate20260410-31-tjkury.pdf">
-    <img src="ethical_hacker_cert.jpg" width="450" style="border: 2px solid #00ff00; margin: 10px;" alt="Cisco Ethical Hacker">
-  </a>
+  <img src="ethical_hacker_cert.jpg" width="600" style="border: 2px solid #00ff00; margin: 10px;" alt="Cisco Ethical Hacker">
   <br>
   <b>1. Ethical Hacker - Cisco Academy</b>
 </p>
@@ -41,9 +39,7 @@ Aquí puedes ver mis diplomas directamente. Haz clic en las imágenes para ver e
 <br>
 
 <p align="center">
-  <a href="./Certificaciones/IJCSUpdate20260410-31-u8h4vq.pdf">
-    <img src="cybersecurity_cert.jpg" width="450" style="border: 2px solid #00ff00; margin: 10px;" alt="Introduction to Cybersecurity">
-  </a>
+  <img src="cybersecurity_cert.jpg" width="600" style="border: 2px solid #00ff00; margin: 10px;" alt="Introduction to Cybersecurity">
   <br>
   <b>2. Introduction to Cybersecurity - Cisco Academy</b>
 </p>
