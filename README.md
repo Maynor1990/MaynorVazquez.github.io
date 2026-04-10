@@ -1,4 +1,4 @@
-# 🖥️ [ SYSTEM STATUS: ONLINE ]<p align="center">
+# 🖥️ [ SYSTEM STATUS: ONLINE ]
   <img src="https://img.shields.io/badge/🛡️_Security-Researcher-red?style=for-the-badge" />
   <img src="https://img.shields.io/badge/⚙️_Industrial-Engineer-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/🐍_Python_Dev-yellow?style=for-the-badge&logo=python&logoColor=white" />
