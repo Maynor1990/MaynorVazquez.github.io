@@ -1,8 +1,6 @@
-# MaynorVazquez.github.io
-"Security Lab | Bitácora de aprendizaje en Pentesting, Redes y Ciberseguridad. [System: Online]"
 # [ SYSTEM STATUS: ONLINE ]
 # User: Mynor_Vazquez_Sec
-# Department: Industrial_Engineering_UnADM
+# Dept: Industrial_Engineering_UnADM
 
 > "La seguridad no es un producto, es un proceso."
 
@@ -10,19 +8,20 @@
 
 ## 📂 DIRECTORY_STRUCTURE
 
-* **./Bitacora_Diaria** - Progreso día a día en mi laboratorio virtual.
-* **./Writeups_Pentesting** - Reportes técnicos de herramientas (Nmap, Metasploit).
-* **./Python_Scripts** - Automatización de tareas y herramientas personalizadas.
-* **./Certificaciones** - Mi trayectoria académica y cursos.
+* **[./Bitacora_Diaria](https://github.com/Maynor1990/MaynorVazquez.github.io/tree/main/Bitacora_Diaria)** - Seguimiento diario de aprendizaje.
+* **[./Writeups_Pentesting](https://github.com/Maynor1990/MaynorVazquez.github.io/tree/main/Writeups_Pentesting)** - Reportes de auditoría y análisis técnicos.
+* **[./Python_Scripts](https://github.com/Maynor1990/MaynorVazquez.github.io/tree/main/Python_Scripts)** - Automatización y herramientas propias.
+* **[./Certificaciones](https://github.com/Maynor1990/MaynorVazquez.github.io/tree/main/Certificaciones)** - Logros académicos y formación continua.
 
 ---
 
 ## ⚡ RECENT_ACTIVITY
 
-### [09-04-2026] :: Estructurando Portafolio Digital
-- [x] Configuración de repositorio principal.
-- [x] Definición de identidad visual (Cyberpunk/Terminal).
-- [ ] Documentar primer escaneo con Nmap.
+### [09-04-2026] :: Deploy de Infraestructura Digital
+- [x] Configuración de repositorio principal y GitHub Pages.
+- [x] Definición de identidad visual estilo Terminal.
+- [x] Documentar primer reporte de auditoría (Nmap).
+- [ ] Desarrollar script de automatización en Python.
 
 ---
 
@@ -35,5 +34,11 @@
 ---
 
 ## 📟 CONTACT_ME
-- **Location:** Mexico
-- **Status:** Estudiante de Ingeniería Industrial
+- **Location:** México 🇲🇽
+- **Professional Status:** Estudiante de Ingeniería Industrial
+- **GitHub:** [Maynor1990](https://github.com/Maynor1990)
+
+---
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Maynor1990&label=LAB%20VIEWS&color=00ff00&style=flat" alt="Views" />
+</p>
