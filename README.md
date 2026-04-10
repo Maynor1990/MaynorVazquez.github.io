@@ -1,8 +1,4 @@
-# [ SYSTEM STATUS: ONLINE ]
-
-<p align="center">
-  <img src="perfil.jpg" width="150" style="border-radius: 50%; border: 3px solid #00ff00;" alt="Mynor Vazquez Sec">
-</p>
+# 🖥️ [ SYSTEM STATUS: ONLINE ]
 
 ## 👤 User: Mynor_Vazquez_Sec
 ## ⚙️ Dept: Industrial_Engineering_UnADM
@@ -13,12 +9,10 @@
 
 ## 📂 DIRECTORY_STRUCTURE
 
-Explora las secciones de mi laboratorio.
-
-* 📁 **[./Bitacora_Diaria](./Bitacora_Diaria)** - Seguimiento de aprendizaje.
+* 📁 **[./Bitacora_Diaria](./Bitacora_Diaria)** - Notas de aprendizaje.
 * 🛡️ **[./Writeups_Pentesting](./Writeups_Pentesting)** - Reportes técnicos.
 * 🐍 **[./Python_Scripts](./Python_Scripts)** - Automatización.
-* 🎖️ **[./Certificaciones](./Certificaciones)** - Todos mis logros.
+* 🎖️ **[./Certificaciones](./Certificaciones)** - Mis logros oficiales.
 
 ---
 
@@ -26,32 +20,32 @@ Explora las secciones de mi laboratorio.
 
 ### [10-04-2026] :: Infraestructura Digital y Credenciales
 - [x] Despliegue de portafolio profesional en GitHub Pages.
-- [x] Configuración de galería de certificados directa.
-- [x] Carga de credenciales oficiales de Cisco Academy.
-- [x] Desarrollo de herramienta generadora de reportes en Python.
+- [x] Galería de certificados integrada en la portada.
+- [x] Carga de credenciales de Cisco Academy.
+- [x] Script `report_generator.py` funcional en Python.
 
 ---
 
 ## 🎖️ MIS CERTIFICACIONES DESTACADAS
 
-Aquí puedes verificar mis credenciales oficiales de **Cisco Networking Academy**.
+Aquí puedes ver mis diplomas directamente. Haz clic en las imágenes para ver el PDF original.
 
 <p align="center">
-  <a href="Ethical_Hacker_Maynor.pdf">
-    <img src="ethical_hacker_cert.jpg" width="400" style="border: 2px solid #555; margin: 10px;" alt="Ethical Hacker Cisco">
+  <a href="./Certificaciones/EthicalHackerUpdate20260410-31-tjkury.pdf">
+    <img src="ethical_hacker_cert.jpg" width="450" style="border: 2px solid #00ff00; margin: 10px;" alt="Cisco Ethical Hacker">
   </a>
   <br>
-  <b>1. Ethical Hacker</b> (Emisión: Mar 14, 2026) | <a href="Ethical_Hacker_Maynor.pdf">Ver PDF</a>
+  <b>1. Ethical Hacker - Cisco Academy</b>
 </p>
 
 <br>
 
 <p align="center">
-  <a href="IJCS_Cybersecurity_Maynor.pdf">
-    <img src="cybersecurity_cert.jpg" width="400" style="border: 2px solid #555; margin: 10px;" alt="Introduction to Cybersecurity Cisco">
+  <a href="./Certificaciones/IJCSUpdate20260410-31-u8h4vq.pdf">
+    <img src="cybersecurity_cert.jpg" width="450" style="border: 2px solid #00ff00; margin: 10px;" alt="Introduction to Cybersecurity">
   </a>
   <br>
-  <b>2. Introduction to Cybersecurity</b> (Emisión: Feb 05, 2026) | <a href="IJCS_Cybersecurity_Maynor.pdf">Ver PDF</a>
+  <b>2. Introduction to Cybersecurity - Cisco Academy</b>
 </p>
 
 ---
