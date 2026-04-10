@@ -1,2 +1,2 @@
 # MaynorVazquez.github.io
-"Portfolio de Ciberseguridad y Proyectos de Ingeniería | Documentación de laboratorios y scripts en Python.
+"Digital Garden & Security Lab | Bitácora de aprendizaje en Pentesting, Redes y Ciberseguridad. [System: Online]"
