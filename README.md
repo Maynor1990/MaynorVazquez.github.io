@@ -9,24 +9,28 @@
 
 ## 📂 DIRECTORY_STRUCTURE
 
+Explora las secciones de mi laboratorio. Haz clic en los iconos para navegar:
+
 * 📁 **[./Bitacora-Diaria](./Bitacora-Diaria)** - Notas de aprendizaje.
 * 🛡️ **[./Writeups_Pentesting](./Writeups_Pentesting)** - Reportes técnicos.
 * 🐍 **[./Python_Scripts](./Python_Scripts)** - Automatización.
-* 🎖️ **[./Certificaciones](./Certificaciones)** - Mis logros oficiales.
+* 🎖️ **[./Certificaciones](./Certificaciones)** - Todos mis logros.
 
 ---
 
 ## ⚡ RECENT_ACTIVITY
 
 ### [10-04-2026] :: Infraestructura Digital y Credenciales
-- [x] Despliegue de portafolio profesional en GitHub Pages.
-- [x] Galería de certificados integrada en la portada.
-- [x] Carga de credenciales de Cisco Academy.
-- [x] Script `report_generator.py` funcional en Python.
+- [x] Corrección de enlaces de directorio (Guiones corregidos).
+- [x] Visualización directa de certificados en portada.
+- [x] Verificación de credenciales oficiales de Cisco Academy.
+- [x] Optimización de navegación en GitHub Pages.
 
 ---
 
 ## 🎖️ MIS CERTIFICACIONES DESTACADAS
+
+Aquí puedes ver mis diplomas directamente:
 
 <p align="center">
   <img src="ethical_hacker_cert.jpg" width="600" style="border: 2px solid #00ff00; margin: 10px;" alt="Cisco Ethical Hacker">
