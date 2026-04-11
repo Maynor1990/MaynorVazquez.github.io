@@ -8,6 +8,7 @@
         body { margin: 0; background: #000; font-family: 'Courier New', monospace; color: #0f0; overflow: hidden; }
         #matrix-canvas { position: fixed; top: 0; left: 0; z-index: 1; opacity: 0.2; }
 
+        /* Contenedor Dashboard */
         .dashboard {
             position: relative;
             z-index: 2;
@@ -31,17 +32,29 @@
 
         h3 { border-bottom: 1px solid #0f0; padding-bottom: 5px; font-size: 0.9em; text-align: center; color: #f0f; text-transform: uppercase; }
 
-        /* Contenedor de Certificados Ajustado */
+        /* Certificados */
         .cert-box { width: 100%; border: 1px solid #0f0; margin-bottom: 15px; background: #111; border-radius: 2px; }
         .cert-img { width: 100%; height: auto; display: block; filter: brightness(0.8) contrast(1.2); }
 
-        /* Estilos de Tabla y Badges */
+        /* Tablas y Estilos */
         table { width: 100%; border-collapse: collapse; font-size: 0.8em; margin: 15px 0; }
         th, td { border: 1px solid #030; padding: 8px; text-align: left; }
         .status-header { background: #0f0; color: #000; font-weight: bold; text-align: center; padding: 5px; margin-bottom: 15px; }
         .badge { border: 1px solid #0f0; padding: 2px 6px; font-size: 0.75em; margin: 2px; display: inline-block; }
 
-        /* Logs de Actividad Reciente */
+        /* Enlace del Proyecto */
+        .project-link {
+            color: #f0f;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #f0f;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .project-link:hover { background: #f0f; color: #000; }
+
         .terminal-box { background: #000800; border: 1px solid #030; padding: 10px; font-size: 0.8em; color: #0c0; margin-top: 10px; }
         .cursor { animation: blink 1s infinite; }
         @keyframes blink { 50% { opacity: 0; } }
@@ -80,25 +93,28 @@
         <table>
             <tr><th>CATEGORÍA</th><th>TECNOLOGÍAS</th></tr>
             <tr><td>RECON</td><td>Zenmap, Snmpcheck, Netdiscover</td></tr>
-            <tr><td>PENTESTING</td><td>Evasión de Firewalls, Fragmentación ARP</td></tr>
+            <tr><td>PENTESTING</td><td>Evasión de Firewalls, Metasploit</td></tr>
             <tr><td>DESARROLLO</td><td>Python Automation, FastAPI, MayNexus</td></tr>
         </table>
 
-        <b style="color:#0f0; font-size:0.9em;">### 🛰️ ÚLTIMAS MISIONES</b>
-        <p style="font-size:0.8em;"><strong>Caso 192.168.0.249:</strong> Implementación de Capa 2 tras bloqueo Capa 3/4.</p>
+        <b style="color:#0f0; font-size:0.9em;">### 🛰️ PROYECTOS ACTIVOS</b>
+        <div style="margin-top:10px;">
+            <p style="font-size:0.85em; margin:0;"><strong>> Network Auditor v1.0:</strong></p>
+            <p style="font-size:0.8em; color:#ccc;">Script de Python que genera reportes de vulnerabilidades en tiempo real.</p>
+            <a href="reporte_red.html" target="_blank" class="project-link">[ EJECUTAR REPORTE TÁCTICO ]</a>
+        </div>
 
         <div class="terminal-box">
-            <p>> [2026-04-10] CONFIG: Migración a Modo Oscuro completada.</p>
-            <p>> [2026-04-10] UPDATE: Estructura de columnas laterales activada.</p>
+            <p>> [2026-04-10] SYSTEM: Enlace a reporte_red.html activo.</p>
             <p>> [LOG]: MayNexus Deployment... <span class="cursor">█</span></p>
         </div>
     </main>
 
     <aside class="panel">
         <h3>⚠️ CONSEJOS (CYBER-TIPS)</h3>
-        <p style="font-size:0.8em;"><strong>> MFA:</strong> Activa doble factor en todo.</p>
+        <p style="font-size:0.8em;"><strong>> MFA:</strong> Doble factor en todo.</p>
         <p style="font-size:0.8em;"><strong>> VPN:</strong> Túneles cifrados en redes públicas.</p>
-        <p style="font-size:0.8em;"><strong>> PASS:</strong> Uso de gestores (KeePass/Bitwarden).</p>
+        <p style="font-size:0.8em;"><strong>> PASS:</strong> Uso de gestores (Bitwarden).</p>
 
         <h3 style="margin-top:30px;">#### PROYECTOS_ADICIONALES</h3>
         <p style="font-size:0.8em;">> Automatización Auditorías Python</p>
