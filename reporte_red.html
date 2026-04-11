@@ -1,0 +1,50 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { background-color: #000; color: #0f0; font-family: 'Courier New', monospace; padding: 20px; }
+            .report-card { border: 1px solid #0f0; padding: 15px; background: rgba(0, 30, 0, 0.5); }
+            h1 { color: #f0f; text-shadow: 0 0 5px #f0f; }
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+            th, td { border: 1px solid #0f0; padding: 10px; text-align: left; }
+            .warning { color: #ff0; font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <div class="report-card">
+            <h1>[ MAYNEXUS NETWORK AUDIT REPORT ]</h1>
+            <p>FECHA DE ESCANEO: 2026-04-10 21:06:30</p>
+            <hr>
+            <table>
+                <tr>
+                    <th>DIRECCIÓN IP</th>
+                    <th>IDENTIFICADOR</th>
+                    <th>ESTADO DEL NODO</th>
+                </tr>
+    
+                <tr>
+                    <td>192.168.0.1</td>
+                    <td>Router_Gateway</td>
+                    <td class="">Seguro</td>
+                </tr>
+        
+                <tr>
+                    <td>192.168.0.15</td>
+                    <td>Maynor_Workstation</td>
+                    <td class="">Protegido</td>
+                </tr>
+        
+                <tr>
+                    <td>192.168.0.249</td>
+                    <td>Unknown_Device</td>
+                    <td class="warning">Advertencia: Puerto 80 Abierto</td>
+                </tr>
+        
+            </table>
+            <p style="margin-top: 30px; font-size: 0.8em;">Generado automáticamente por MayNexus Auditor Engine v1.0</p>
+        </div>
+    </body>
+    </html>
+    
