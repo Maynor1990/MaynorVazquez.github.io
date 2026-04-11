@@ -2,41 +2,129 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAYNOR VAZQUEZ | CORE SYSTEM</title>
     <style>
-        body { margin: 0; background: black; font-family: 'Courier New', monospace; color: #00FF00; overflow: hidden; }
+        /* Estilos Base - Interfaz de Terminal */
+        body { 
+            margin: 0; 
+            background: black; 
+            font-family: 'Courier New', Courier, monospace; 
+            color: #00FF00; 
+            overflow: hidden; 
+        }
         
-        /* El motor de Matrix */
+        /* Motor de la Lluvia Matrix */
         #matrix-canvas {
             position: fixed;
             top: 0;
             left: 0;
-            z-index: 1; /* Al fondo */
-            opacity: 0.2;
+            z-index: 1;
+            opacity: 0.25;
         }
 
-        /* Tu contenido real */
+        /* Contenedor de Información */
         .container {
             position: relative;
-            z-index: 2; /* Arriba del fondo */
-            max-width: 850px;
-            margin: 2% auto;
-            background: rgba(0, 0, 0, 0.85);
-            padding: 25px;
+            z-index: 2;
+            max-width: 900px;
+            margin: 3% auto;
+            background: rgba(0, 0, 0, 0.88);
+            padding: 30px;
             border: 2px solid #00FF00;
-            box-shadow: 0 0 20px #00FF00;
+            box-shadow: 0 0 25px rgba(0, 255, 0, 0.4);
+            border-radius: 4px;
+            overflow-y: auto;
+            max-height: 90vh;
         }
 
-        .status-bar { background: #00FF00; color: black; text-align: center; font-weight: bold; padding: 5px; margin-bottom: 15px; }
-        h1 { text-align: center; border-bottom: 1px solid #00FF00; padding-bottom: 10px; }
-        .stats { display: flex; justify-content: space-around; margin: 15px 0; font-size: 0.8em; }
-        .badge { border: 1px solid #00FF00; padding: 3px 10px; margin: 5px; display: inline-block; font-size: 0.8em; }
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9em; }
-        th, td { border: 1px solid #004400; padding: 8px; text-align: left; }
-        th { color: #f0f; }
-        .terminal { background: #001100; padding: 15px; font-size: 0.8em; border-radius: 5px; margin-top: 15px; }
+        .status-bar { 
+            background: #00FF00; 
+            color: black; 
+            text-align: center; 
+            font-weight: bold; 
+            padding: 6px; 
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        h1 { 
+            text-align: center; 
+            margin-top: 0;
+            font-size: 1.8em;
+            border-bottom: 1px solid #00FF00;
+            padding-bottom: 15px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        /* Badges de Certificación */
+        .badges {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .badge {
+            border: 1px solid #00FF00;
+            padding: 4px 12px;
+            margin: 5px;
+            display: inline-block;
+            font-size: 0.85em;
+            background: rgba(0, 68, 0, 0.3);
+        }
+
+        /* Tabla de Arsenal Técnico */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(0, 17, 0, 0.5);
+        }
+
+        th, td {
+            border: 1px solid #004400;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            color: #ff00ff; /* Resaltado Magenta para títulos */
+            font-size: 0.9em;
+        }
+
+        /* Sección de Proyectos */
+        .projects {
+            margin-top: 25px;
+        }
+
+        .project-item {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 3px solid #00FF00;
+        }
+
+        /* Terminal de Logs */
+        .terminal-logs {
+            background: #000800;
+            padding: 15px;
+            font-size: 0.85em;
+            border: 1px solid #003300;
+            margin-top: 20px;
+            border-radius: 3px;
+            color: #00cc00;
+        }
+
         .cursor { animation: blink 1s infinite; }
         @keyframes blink { 50% { opacity: 0; } }
+
+        /* Scrollbar personalizada */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #004400; }
     </style>
 </head>
 <body>
@@ -44,52 +132,106 @@
     <canvas id="matrix-canvas"></canvas>
 
     <div class="container">
-        <div class="status-bar">[ SYSTEM OPERATIONAL | SECURED ]</div>
+        <div class="status-bar">[ SYSTEM OPERATIONAL | SECURE_ACCESS_GRANTED ]</div>
         
         <h1>[ MAYNOR VAZQUEZ | CORE SYSTEM ] <span class="cursor">█</span></h1>
-        <p style="text-align: center;">Quality Inspector Expert (Stryker - 14 Years) | Cybersecurity Specialist | Python Developer</p>
+        
+        <div class="subtitle">
+            <strong>Industrial Engineer | Cybersecurity Researcher | Python Developer</strong>
+        </div>
 
-        <div style="text-align: center;">
-            <span class="badge">KALI LINUX</span> <span class="badge">CISCO ACADEMY</span> 
-            <span class="badge">UNADM</span> <span class="badge">INDUSTRIAL ENG</span>
+        <div class="badges">
+            <span class="badge">KALI LINUX</span>
+            <span class="badge">CISCO NETWORKING ACADEMY</span>
+            <span class="badge">UNADM - INGENIERÍA</span>
+            <span class="badge">PENTESTING & RECON</span>
         </div>
 
         <table>
-            <tr><th>CATEGORÍA</th><th>HERRAMIENTAS Y TECNOLOGÍAS</th></tr>
-            <tr><td>RECONOCIMIENTO</td><td>Nmap, Wireshark, Snmpwalk, Netdiscover</td></tr>
-            <tr><td>PENTESTING</td><td>Metasploit, SQLmap, Hydra, Evasión de Firewall</td></tr>
-            <tr><td>DESARROLLO</td><td>Python (Automation), FastAPI, MayNexus App</td></tr>
-            <tr><td>INDUSTRIAL</td><td>Inspección de Calidad, Six Sigma, GD&T</td></tr>
+            <thead>
+                <tr>
+                    <th>DOMINIO TÉCNICO</th>
+                    <th>HERRAMIENTAS & FRAMEWORKS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>RECONOCIMIENTO</strong></td>
+                    <td>Nmap (Stealth/Advanced), Wireshark, Netdiscover, Snmpwalk</td>
+                </tr>
+                <tr>
+                    <td><strong>AUDITORÍA DE RED</strong></td>
+                    <td>Evasión de Firewalls, Análisis de Vulnerabilidades, Seguridad en Capas 2/4</td>
+                </tr>
+                <tr>
+                    <td><strong>DESARROLLO</strong></td>
+                    <td>Python (Scripting de Seguridad), FastAPI, Proyectos de Automatización</td>
+                </tr>
+                <tr>
+                    <td><strong>ING. INDUSTRIAL</strong></td>
+                    <td>Optimización de Procesos, Sistemas de Gestión, Ingeniería de Calidad</td>
+                </tr>
+            </tbody>
         </table>
 
-        <div class="terminal">
-            <p>> [2026-04-10 14:45] STATUS: Sistema optimizado para auditoría (Nmap/ARP).</p>
-            <p>> [2026-04-10 15:00] SCANNING: Monitoreo pasivo de red local en progreso...</p>
+        <div class="projects">
+            <h3>🛰️ PROYECTOS_DE_INTELIGENCIA</h3>
+            <div class="project-item">
+                <strong>Auditoría de Resiliencia LAN:</strong> 
+                Mapeo de activos y evasión de seguridad en nodos críticos mediante ARP Stealth y técnicas de fragmentación.
+            </div>
+            <div class="project-item">
+                <strong>Ecosistema MayNexus:</strong> 
+                Desarrollo de aplicaciones modulares en Python para la gestión y automatización de flujos de datos.
+            </div>
+            <div class="project-item">
+                <strong>Ciberseguridad OT:</strong> 
+                Protección de entornos industriales mediante el endurecimiento (hardening) de protocolos de red.
+            </div>
+        </div>
+
+        <div class="terminal-logs">
+            <p>> [LOG]: Initializing system_core...</p>
+            <p>> [LOG]: Loading penetration_testing_modules...</p>
+            <p>> [LOG]: Portafolio optimizado para visualización táctica.</p>
+            <p>> [LOG]: Escaneando nuevas vulnerabilidades en el segmento local... <span class="cursor">_</span></p>
         </div>
     </div>
 
     <script>
         const canvas = document.getElementById('matrix-canvas');
         const ctx = canvas.getContext('2d');
+
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-        const chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿ";
+
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿ";
         const fontSize = 16;
         const columns = canvas.width / fontSize;
-        const drops = Array(Math.floor(columns)).fill(1);
+        const drops = Array.from({ length: columns }).fill(1);
 
         function draw() {
             ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             ctx.fillStyle = "#0F0";
             ctx.font = fontSize + "px monospace";
+
             for (let i = 0; i < drops.length; i++) {
                 const text = chars[Math.floor(Math.random() * chars.length)];
                 ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
                 drops[i]++;
             }
         }
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
         setInterval(draw, 35);
     </script>
 </body>
