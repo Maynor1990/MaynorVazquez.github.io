@@ -3,201 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mynor Vazquez | Core System</title>
+    <title>MAYNOR VAZQUEZ | CORE SYSTEM</title>
     <style>
-        /* Estilos Base - Terminal Style */
-        body { 
-            margin: 0; 
-            background: #000; 
-            font-family: 'Courier New', monospace; 
-            color: #0f0; 
-            overflow: hidden; 
-        }
-        
-        /* Iframe para el fondo Matrix */
-        #matrix-iframe {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            z-index: 1;
-            opacity: 0.25;
-        }
+        body { margin: 0; background: #000; font-family: 'Courier New', monospace; color: #0f0; overflow: hidden; }
+        #matrix-canvas { position: fixed; top: 0; left: 0; z-index: 1; opacity: 0.2; }
 
-        /* Contenedor Principal Dashboard */
+        /* Contenedor Dashboard */
         .dashboard {
             position: relative;
             z-index: 2;
             display: grid;
-            grid-template-columns: 280px 1fr 280px;
-            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 260px 1fr 260px;
             gap: 15px;
             padding: 15px;
-            height: 95vh;
-            max-width: 1600px;
-            margin: auto;
+            height: 100vh;
+            box-sizing: border-box;
         }
 
-        /* Paneles con Borde Neón */
         .panel {
             background: rgba(0, 0, 0, 0.9);
             border: 1px solid #0f0;
-            border-radius: 4px;
             padding: 15px;
-            overflow-y: auto;
-        }
-
-        /* Header Principal */
-        .header-panel {
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-            text-align: center;
-        }
-
-        /* Paneles Laterales */
-        .left-panel {
-            grid-column: 1 / 2;
-            grid-row: 1 / 4;
-        }
-
-        .right-panel {
-            grid-column: 3 / 4;
-            grid-row: 1 / 4;
-        }
-
-        /* Panel Central Principal */
-        .main-panel {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            border-width: 2px;
-            box-shadow: 0 0 15px #0f0;
-        }
-
-        /* Títulos */
-        h1, h2, h3, h4 { color: #0f0; margin-top: 0; text-transform: uppercase; }
-        h1 { font-size: 1.5em; border-bottom: 1px solid #0f0; padding-bottom: 5px; }
-        h2 { font-size: 1.1em; color: #ff00ff; }
-        h3 { font-size: 0.9em; text-align: center; color: #ff00ff; border-bottom: 1px solid #0f0; padding-bottom: 5px;}
-
-        /* Badges de Certificación (Miniatura) */
-        .cert-badge {
-            width: 80px; 
-            height: 80px; 
-            border: 1px solid #0f0; 
-            margin: 5px auto; 
-            display: block; 
             border-radius: 4px;
-            filter: grayscale(1) brightness(1.2);
-            transition: 0.3s;
-        }
-        .cert-badge:hover { filter: none; }
-
-        /* Iconos de Herramientas */
-        .icon-box {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 10px;
+            overflow-y: auto;
+            box-shadow: inset 0 0 10px #040;
         }
 
-        .icon-box img {
-            width: 32px;
-            height: 32px;
-        }
+        .main-panel { border-width: 2px; box-shadow: 0 0 15px rgba(0, 255, 0, 0.3); }
 
-        /* Badges de Texto */
-        .text-badge {
-            display: inline-block;
-            border: 1px solid #0f0;
-            padding: 3px 10px;
-            margin: 3px;
-            font-size: 0.8em;
-            background: rgba(0, 68, 0, 0.3);
-        }
+        /* Títulos Estilo Terminal */
+        h3 { border-bottom: 1px solid #0f0; padding-bottom: 5px; font-size: 0.9em; text-align: center; color: #f0f; text-transform: uppercase; }
+        .section-title { color: #0f0; font-size: 1.1em; margin-top: 20px; display: block; }
 
-        /* Terminal de Logs */
-        .terminal-box {
-            background: #000800;
-            padding: 10px;
-            font-size: 0.85em;
-            border: 1px solid #003300;
-            color: #00cc00;
-            overflow-x: auto;
-        }
+        /* Imágenes y Certificados */
+        .img-box { width: 100%; border: 1px solid #0f0; margin-bottom: 10px; background: #111; }
+        .cert-img { width: 100%; height: auto; display: block; filter: brightness(0.8) contrast(1.2); }
+        .icon-row { display: flex; align-items: center; gap: 10px; margin: 10px 0; font-size: 0.85em; }
+        .small-icon { width: 24px; height: 24px; border: 1px solid #0f0; }
 
+        /* Tablas y Texto */
+        table { width: 100%; border-collapse: collapse; font-size: 0.8em; margin: 15px 0; }
+        th, td { border: 1px solid #030; padding: 8px; text-align: left; }
+        .status-header { background: #0f0; color: #000; font-weight: bold; text-align: center; padding: 5px; margin-bottom: 15px; }
+        .badge-row { text-align: center; margin-bottom: 15px; }
+        .badge { border: 1px solid #0f0; padding: 2px 8px; font-size: 0.75em; margin: 2px; display: inline-block; }
+
+        /* Logs */
+        .terminal-box { background: #000800; border: 1px solid #030; padding: 10px; font-size: 0.8em; color: #0c0; }
         .cursor { animation: blink 1s infinite; }
         @keyframes blink { 50% { opacity: 0; } }
 
-        /* Scrollbar personalizada */
-        ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-thumb { background: #004400; }
+        ::-webkit-scrollbar { width: 3px; }
+        ::-webkit-scrollbar-thumb { background: #0f0; }
     </style>
 </head>
 <body>
 
-    <iframe id="matrix-iframe" src="matrix.html"></iframe>
+<canvas id="matrix-canvas"></canvas>
 
-    <div class="dashboard">
+<div class="dashboard">
+    <aside class="panel">
+        <h3>🛡️ MIS CERTIFICADOS (CISCO)</h3>
+        <div class="img-box"><img src="cybersecurity_cert.jpg" class="cert-img" alt="Cert 1"></div>
+        <div class="img-box"><img src="ethical_hacker_cert.jpg" class="cert-img" alt="Cert 2"></div>
+        <div class="img-box"><img src="endpoint_cert.jpg" class="cert-img" alt="Cert 3"></div> <h3 style="margin-top:20px;">🦾 ESPECIALIDAD INDUSTRIAL</h3>
+        <p style="font-size:0.85em;">> Ingeniería Industrial (UnADM)</p>
+        <p style="font-size:0.85em;">> Six Sigma & QMS Auditing</p>
+        <p style="font-size:0.85em;">> Hardening de Redes OT</p>
+    </aside>
 
-        <aside class="panel left-panel">
-            <h3>🛡️ MIS CERTIFICADOS (Cisco)</h3>
-            <img src="ethical_hacker_cert.jpg" alt="Ethical Hacker" class="cert-badge">
-            <img src="cybersecurity_cert.jpg" alt="Cybersecurity" class="cert-badge">
-            <img src="endpoint_cert.jpg" alt="Endpoint Security" class="cert-badge">
+    <main class="panel main-panel">
+        <div class="status-header">[ SYSTEM STATUS: ONLINE ]</div>
+        <h1 style="text-align:center; font-size:1.4em; margin:0;">[ MAYNOR VAZQUEZ | CORE SYSTEM ]</h1>
+        <p style="text-align:center; font-size:0.9em; color:#fff;">Cybersecurity Specialist | Industrial Engineer</p>
 
-            <h3 style="margin-top: 25px;">🦾 EXPERIENCIA INDUSTRIAL</h3>
-            <p>14 Years @ Stryker (Quality Inspector)</p>
-            <p>Six Sigma | GD&T | QMS Audit</p>
-        </aside>
+        <div class="badge-row">
+            <span class="badge">Nmap</span> <span class="badge">Wireshark</span> 
+            <span class="badge">Python</span> <span class="badge">Metasploit</span>
+        </div>
 
-        <header class="panel header-panel">
-            <h1>[ MAYNOR VAZQUEZ | CORE SYSTEM ] <span class="cursor">█</span></h1>
-            <p style="color: #fff;">Quality Inspector Expert | Cybersecurity Specialist</p>
-        </header>
+        <b class="section-title">## 🔍 ARSENAL TÉCNICO</b>
+        <table>
+            <tr><th>CATEGORÍA</th><th>TECNOLOGÍAS</th></tr>
+            <tr><td>RECON</td><td>Zenmap, Snmpcheck, Netdiscover</td></tr>
+            <tr><td>PENTESTING</td><td>Evasión de Firewalls, Fragmentación ARP</td></tr>
+            <tr><td>DESARROLLO</td><td>Python Automation, FastAPI, MayNexus</td></tr>
+        </table>
 
-        <main class="panel main-panel">
-            <div style="background: #0f0; color: #000; text-align: center; font-weight: bold; padding: 5px; margin-bottom: 15px;">[ SYSTEM ONLINE ]</div>
-            
-            <h2>## 🛡️ ARSENAL TÉCNICO</h2>
-            <div style="text-align: center;">
-                <span class="text-badge">Nmap</span>
-                <span class="text-badge">Wireshark</span>
-                <span class="text-badge">Snmpwalk</span>
-                <span class="text-badge">Python</span>
-                <span class="text-badge">Metasploit</span>
-            </div>
+        <b class="section-title">### 🛰️ ÚLTIMAS MISIONES</b>
+        <p style="font-size:0.85em; margin:5px 0;"><strong>Caso 192.168.0.249:</strong> Implementación de técnicas Capa 2 tras bloqueo Capa 3/4.</p>
 
-            <h3 style="text-align: left; margin-top: 20px;">### 🛰️ PROYECTOS DESTACADOS</h3>
-            <p><strong>Auditoría de Red:</strong> Mapeo ARP Stealth en 192.168.0.x</p>
-            <p><strong>MayNexus App:</strong> Ecosistema modular para automatización.</p>
+        <div class="terminal-box">
+            <p>> [2026-04-10] CONFIG: Estructura de columnas activada.</p>
+            <p>> [2026-04-10] DEPLOY: Sección Cyber-Tips integrada.</p>
+            <p>> [LOG]: MayNexus Deployment... <span class="cursor">█</span></p>
+        </div>
+    </aside>
 
-            <div class="terminal-box">
-                <p>> Terminal Simulator Box</p>
-                <p>> [LOG]: Stryker_Purge...</p>
-                <p>> [LOG]: MayNexus Deployment...</p>
-            </div>
-        </main>
+    <aside class="panel">
+        <h3>⚠️ CONSEJOS (CYBER-TIPS)</h3>
+        <p style="font-size:0.8em;"><strong>> MFA:</strong> Doble factor en todo.</p>
+        <p style="font-size:0.8em;"><strong>> VPN:</strong> Túneles cifrados en redes públicas.</p>
+        <p style="font-size:0.8em;"><strong>> PASS:</strong> Uso de gestores (KeePass/Bitwarden).</p>
 
-        <aside class="panel right-panel">
-            <h3>⚠️ CONSEJOS DE SEGURIDAD (CYBER-TIPS)</h3>
-            <p><strong>> MFA:</strong> Double Factor Authentication en cada cuenta.</p>
-            <p><strong>> PASS MGR:</strong> KeePass o Bitwarden.</p>
-            <p><strong>> VPN:</strong> Never public Wi-Fi without tunneling.</p>
+        <h3 style="margin-top:20px;">#### PROYECTOS_ADICIONALES</h3>
+        <div class="icon-row">
+            <div class="small-icon" style="background: #002200;"></div>
+            <span>Automatización de Auditorías Python</span>
+        </div>
+        <div class="icon-row">
+            <div class="small-icon" style="background: #002200;"></div>
+            <span>Evasión de Firewalls (Bypass)</span>
+        </div>
+        <div class="icon-row">
+            <div class="small-icon" style="background: #002200;"></div>
+            <span>Inspección de Calidad GD&T</span>
+        </div>
+    </aside>
+</div>
 
-            <h3 style="margin-top: 25px;">### PROYECTOS_ADICIONALES</h3>
-            <div class="icon-box">
-                <img src="python_icon.png" alt="Python">
-                <span>Automatización de Auditorías</span>
-            </div>
-            <div class="icon-box">
-                <img src="kali_icon.png" alt="Kali">
-                <span>Evasión de Firewalls</span>
-            </div>
-        </aside>
-
-    </div>
-
+<script>
+    const canvas = document.getElementById('matrix-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+    const chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿ";
+    const fontSize = 16;
+    const columns = canvas.width / fontSize;
+    const drops = Array(Math.floor(columns)).fill(1);
+    function draw() {
+        ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "#0F0";
+        ctx.font = fontSize + "px monospace";
+        for (let i = 0; i < drops.length; i++) {
+            const text = chars[Math.floor(Math.random() * chars.length)];
+            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+            if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+            drops[i]++;
+        }
+    }
+    setInterval(draw, 35);
+    window.onresize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
+</script>
 </body>
 </html>
