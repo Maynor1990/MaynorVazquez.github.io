@@ -1,0 +1,53 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { background-color: #000; color: #0f0; font-family: 'Courier New', monospace; padding: 20px; }
+            .report-card { border: 1px solid #0f0; padding: 15px; background: rgba(0, 30, 0, 0.7); box-shadow: 0 0 10px #0f0; }
+            h1 { color: #f0f; text-shadow: 0 0 5px #f0f; }
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+            th, td { border: 1px solid #0f0; padding: 12px; text-align: left; }
+            th { background: #040; }
+            .warning { color: #ff0; font-weight: bold; }
+            .secure { color: #0f0; }
+        </style>
+    </head>
+    <body>
+        <div class="report-card">
+            <h1>[ MAYNEXUS NETWORK AUDIT REPORT - ANONYMIZED ]</h1>
+            <p>FECHA DE ESCANEO: 2026-04-11 10:45:56</p>
+            <p style="color: #0af;">ESTADO: Los últimos octetos de las IPs han sido ocultados por seguridad.</p>
+            <hr>
+            <table>
+                <tr>
+                    <th>DIRECCIÓN IP</th>
+                    <th>IDENTIFICADOR</th>
+                    <th>ESTADO DEL NODO</th>
+                </tr>
+    
+                <tr>
+                    <td>192.168.0.*</td>
+                    <td>Router_Gateway</td>
+                    <td class="secure">Seguro</td>
+                </tr>
+        
+                <tr>
+                    <td>192.168.0.*</td>
+                    <td>Maynor_Workstation</td>
+                    <td class="secure">Protegido</td>
+                </tr>
+        
+                <tr>
+                    <td>192.168.0.*</td>
+                    <td>Unknown_Node</td>
+                    <td class="warning">Advertencia: Puerto 80 Abierto</td>
+                </tr>
+        
+            </table>
+            <p style="margin-top: 30px; font-size: 0.8em; text-align: center;">Generado por MayNexus Auditor Engine v1.2 | Nivel de Privacidad: ALTO</p>
+        </div>
+    </body>
+    </html>
+    
