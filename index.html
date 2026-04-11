@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mynor Vazquez | Portafolio Cyber-Industrial</title>
+    <style>
+        body { margin: 0; background: black; font-family: 'Courier New', monospace; color: #00FF00; overflow-x: hidden; }
+        
+        /* Canvas para la lluvia de Matrix */
+        #matrix-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        /* Contenedor Estilo Terminal */
+        .container {
+            max-width: 850px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 25px;
+            border: 2px solid #00FF00;
+            box-shadow: 0 0 15px #00FF00;
+        }
+
+        .header { border-bottom: 2px solid #00FF00; padding-bottom: 10px; text-align: center; }
+        .stats { display: flex; justify-content: space-around; margin: 20px 0; font-size: 0.9em; }
+        .terminal-box { background: #001100; border: 1px solid #004400; padding: 15px; margin-top: 20px; font-size: 0.85em; }
+        .cursor { animation: blink 1s infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+
+    <canvas id="matrix-canvas"></canvas>
+
+    <div class="container">
+        <div class="header">
+            <h1>SYSTEM OVERRIDE: MYNOR VAZQUEZ <span class="cursor">█</span></h1>
+            <p>Quality Inspector @ Stryker | Industrial Engineer | Ethical Hacker</p>
+        </div>
+
+        <div class="stats">
+            <span>[ EXP: 14 YEARS ]</span>
+            <span>[ UNADM: TELEMÁTICA ]</span>
+            <span>[ STATUS: PENTESTING ]</span>
+        </div>
+
+        <h3>🛡️ TOOLSET_CAPABILITIES</h3>
+        <ul>
+            <li>NETWORK_ENUMERATION: Nmap, Wireshark, Netdiscover</li>
+            <li>EXPLOITATION_TOOLS: Metasploit, Snmpwalk</li>
+            <li>DEV_LOGIC: Python, FastAPI, Automation Scripts</li>
+        </ul>
+
+        <div class="terminal-box">
+            <p>> initializing network_audit.sh...</p>
+            <p>> scanning target 192.168.0.249...</p>
+            <p>> [WARN] ICMP blocked. Switching to ARP Stealth Mode.</p>
+            <p>> [OK] Matrix background deployed successfully.</p>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
+        const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const nums = '0123456789';
+        const alphabet = katakana + latin + nums;
+
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const rainDrops = Array.from({ length: columns }).fill(1);
+
+        function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#0F0';
+            ctx.font = fontSize + 'px monospace';
+
+            for (let i = 0; i < rainDrops.length; i++) {
+                const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+                ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
+                if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    rainDrops[i] = 0;
+                }
+                rainDrops[i]++;
+            }
+        }
+        setInterval(draw, 30);
+    </script>
+</body>
+</html>
