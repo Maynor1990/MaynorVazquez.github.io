@@ -8,7 +8,6 @@
         body { margin: 0; background: #000; font-family: 'Courier New', monospace; color: #0f0; overflow: hidden; }
         #matrix-canvas { position: fixed; top: 0; left: 0; z-index: 1; opacity: 0.2; }
 
-        /* Contenedor Dashboard */
         .dashboard {
             position: relative;
             z-index: 2;
@@ -26,30 +25,24 @@
             padding: 15px;
             border-radius: 4px;
             overflow-y: auto;
-            box-shadow: inset 0 0 10px #040;
         }
 
         .main-panel { border-width: 2px; box-shadow: 0 0 15px rgba(0, 255, 0, 0.3); }
 
-        /* Títulos Estilo Terminal */
         h3 { border-bottom: 1px solid #0f0; padding-bottom: 5px; font-size: 0.9em; text-align: center; color: #f0f; text-transform: uppercase; }
-        .section-title { color: #0f0; font-size: 1.1em; margin-top: 20px; display: block; }
 
-        /* Imágenes y Certificados */
-        .img-box { width: 100%; border: 1px solid #0f0; margin-bottom: 10px; background: #111; }
+        /* Contenedor de Certificados Ajustado */
+        .cert-box { width: 100%; border: 1px solid #0f0; margin-bottom: 15px; background: #111; border-radius: 2px; }
         .cert-img { width: 100%; height: auto; display: block; filter: brightness(0.8) contrast(1.2); }
-        .icon-row { display: flex; align-items: center; gap: 10px; margin: 10px 0; font-size: 0.85em; }
-        .small-icon { width: 24px; height: 24px; border: 1px solid #0f0; }
 
-        /* Tablas y Texto */
+        /* Estilos de Tabla y Badges */
         table { width: 100%; border-collapse: collapse; font-size: 0.8em; margin: 15px 0; }
         th, td { border: 1px solid #030; padding: 8px; text-align: left; }
         .status-header { background: #0f0; color: #000; font-weight: bold; text-align: center; padding: 5px; margin-bottom: 15px; }
-        .badge-row { text-align: center; margin-bottom: 15px; }
-        .badge { border: 1px solid #0f0; padding: 2px 8px; font-size: 0.75em; margin: 2px; display: inline-block; }
+        .badge { border: 1px solid #0f0; padding: 2px 6px; font-size: 0.75em; margin: 2px; display: inline-block; }
 
-        /* Logs */
-        .terminal-box { background: #000800; border: 1px solid #030; padding: 10px; font-size: 0.8em; color: #0c0; }
+        /* Logs de Actividad Reciente */
+        .terminal-box { background: #000800; border: 1px solid #030; padding: 10px; font-size: 0.8em; color: #0c0; margin-top: 10px; }
         .cursor { animation: blink 1s infinite; }
         @keyframes blink { 50% { opacity: 0; } }
 
@@ -63,26 +56,27 @@
 
 <div class="dashboard">
     <aside class="panel">
-        <h3>🛡️ MIS CERTIFICADOS (CISCO)</h3>
-        <div class="img-box"><img src="cybersecurity_cert.jpg" class="cert-img" alt="Cert 1"></div>
-        <div class="img-box"><img src="ethical_hacker_cert.jpg" class="cert-img" alt="Cert 2"></div>
-        <div class="img-box"><img src="endpoint_cert.jpg" class="cert-img" alt="Cert 3"></div> <h3 style="margin-top:20px;">🦾 ESPECIALIDAD INDUSTRIAL</h3>
-        <p style="font-size:0.85em;">> Ingeniería Industrial (UnADM)</p>
-        <p style="font-size:0.85em;">> Six Sigma & QMS Auditing</p>
-        <p style="font-size:0.85em;">> Hardening de Redes OT</p>
+        <h3>🛡️ CERTIFICADOS (CISCO)</h3>
+        <div class="cert-box"><img src="cybersecurity_cert.jpg" class="cert-img" alt="Cybersecurity"></div>
+        <div class="cert-box"><img src="ethical_hacker_cert.jpg" class="cert-img" alt="Ethical Hacking"></div>
+        
+        <h3 style="margin-top:25px;">🦾 ESPECIALIDAD INDUSTRIAL</h3>
+        <p style="font-size:0.8em;">> Ing. Industrial (UnADM)</p>
+        <p style="font-size:0.8em;">> Six Sigma & QMS Auditing</p>
+        <p style="font-size:0.8em;">> Hardening de Redes OT</p>
     </aside>
 
     <main class="panel main-panel">
         <div class="status-header">[ SYSTEM STATUS: ONLINE ]</div>
-        <h1 style="text-align:center; font-size:1.4em; margin:0;">[ MAYNOR VAZQUEZ | CORE SYSTEM ]</h1>
-        <p style="text-align:center; font-size:0.9em; color:#fff;">Cybersecurity Specialist | Industrial Engineer</p>
+        <h1 style="text-align:center; font-size:1.3em; margin:0;">[ MAYNOR VAZQUEZ | CORE SYSTEM ]</h1>
+        <p style="text-align:center; font-size:0.85em; color:#fff;">Cybersecurity Specialist | Industrial Engineer</p>
 
-        <div class="badge-row">
+        <div style="text-align:center; margin:10px 0;">
             <span class="badge">Nmap</span> <span class="badge">Wireshark</span> 
             <span class="badge">Python</span> <span class="badge">Metasploit</span>
         </div>
 
-        <b class="section-title">## 🔍 ARSENAL TÉCNICO</b>
+        <b style="color:#0f0; font-size:0.9em;">## 🔍 ARSENAL TÉCNICO</b>
         <table>
             <tr><th>CATEGORÍA</th><th>TECNOLOGÍAS</th></tr>
             <tr><td>RECON</td><td>Zenmap, Snmpcheck, Netdiscover</td></tr>
@@ -90,35 +84,26 @@
             <tr><td>DESARROLLO</td><td>Python Automation, FastAPI, MayNexus</td></tr>
         </table>
 
-        <b class="section-title">### 🛰️ ÚLTIMAS MISIONES</b>
-        <p style="font-size:0.85em; margin:5px 0;"><strong>Caso 192.168.0.249:</strong> Implementación de técnicas Capa 2 tras bloqueo Capa 3/4.</p>
+        <b style="color:#0f0; font-size:0.9em;">### 🛰️ ÚLTIMAS MISIONES</b>
+        <p style="font-size:0.8em;"><strong>Caso 192.168.0.249:</strong> Implementación de Capa 2 tras bloqueo Capa 3/4.</p>
 
         <div class="terminal-box">
-            <p>> [2026-04-10] CONFIG: Estructura de columnas activada.</p>
-            <p>> [2026-04-10] DEPLOY: Sección Cyber-Tips integrada.</p>
+            <p>> [2026-04-10] CONFIG: Migración a Modo Oscuro completada.</p>
+            <p>> [2026-04-10] UPDATE: Estructura de columnas laterales activada.</p>
             <p>> [LOG]: MayNexus Deployment... <span class="cursor">█</span></p>
         </div>
-    </aside>
+    </main>
 
     <aside class="panel">
         <h3>⚠️ CONSEJOS (CYBER-TIPS)</h3>
-        <p style="font-size:0.8em;"><strong>> MFA:</strong> Doble factor en todo.</p>
+        <p style="font-size:0.8em;"><strong>> MFA:</strong> Activa doble factor en todo.</p>
         <p style="font-size:0.8em;"><strong>> VPN:</strong> Túneles cifrados en redes públicas.</p>
         <p style="font-size:0.8em;"><strong>> PASS:</strong> Uso de gestores (KeePass/Bitwarden).</p>
 
-        <h3 style="margin-top:20px;">#### PROYECTOS_ADICIONALES</h3>
-        <div class="icon-row">
-            <div class="small-icon" style="background: #002200;"></div>
-            <span>Automatización de Auditorías Python</span>
-        </div>
-        <div class="icon-row">
-            <div class="small-icon" style="background: #002200;"></div>
-            <span>Evasión de Firewalls (Bypass)</span>
-        </div>
-        <div class="icon-row">
-            <div class="small-icon" style="background: #002200;"></div>
-            <span>Inspección de Calidad GD&T</span>
-        </div>
+        <h3 style="margin-top:30px;">#### PROYECTOS_ADICIONALES</h3>
+        <p style="font-size:0.8em;">> Automatización Auditorías Python</p>
+        <p style="font-size:0.8em;">> Evasión de Firewalls (Bypass)</p>
+        <p style="font-size:0.8em;">> Inspección de Calidad GD&T</p>
     </aside>
 </div>
 
@@ -126,7 +111,7 @@
     const canvas = document.getElementById('matrix-canvas');
     const ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth; canvas.height = window.innerHeight;
-    const chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿ";
+    const chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZｱｲｳｴｵｶｷｸｹｺ";
     const fontSize = 16;
     const columns = canvas.width / fontSize;
     const drops = Array(Math.floor(columns)).fill(1);
