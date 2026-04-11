@@ -42,20 +42,33 @@
         .status-header { background: #0f0; color: #000; font-weight: bold; text-align: center; padding: 5px; margin-bottom: 15px; }
         .badge { border: 1px solid #0f0; padding: 2px 6px; font-size: 0.75em; margin: 2px; display: inline-block; }
 
-        /* Enlace del Proyecto */
+        /* Botón de Proyecto */
         .project-link {
             color: #f0f;
             text-decoration: none;
             font-weight: bold;
             border: 1px solid #f0f;
-            padding: 5px 10px;
+            padding: 8px 12px;
             display: inline-block;
             margin-top: 10px;
             transition: 0.3s;
+            font-size: 0.9em;
         }
-        .project-link:hover { background: #f0f; color: #000; }
+        .project-link:hover { background: #f0f; color: #000; box-shadow: 0 0 10px #f0f; }
 
-        .terminal-box { background: #000800; border: 1px solid #030; padding: 10px; font-size: 0.8em; color: #0c0; margin-top: 10px; }
+        /* Terminal Simulator */
+        .terminal-box { 
+            background: #000800; 
+            border: 1px solid #030; 
+            padding: 10px; 
+            font-size: 0.75em; 
+            color: #0c0; 
+            margin-top: 20px; 
+            height: 120px; 
+            overflow-y: hidden;
+            border-left: 3px solid #0f0;
+        }
+        .terminal-box p { margin: 3px 0; }
         .cursor { animation: blink 1s infinite; }
         @keyframes blink { 50% { opacity: 0; } }
 
@@ -70,60 +83,60 @@
 <div class="dashboard">
     <aside class="panel">
         <h3>🛡️ CERTIFICADOS (CISCO)</h3>
-        <div class="cert-box"><img src="cybersecurity_cert.jpg" class="cert-img" alt="Cybersecurity"></div>
-        <div class="cert-box"><img src="ethical_hacker_cert.jpg" class="cert-img" alt="Ethical Hacking"></div>
+        <div class="cert-box"><img src="cybersecurity_cert.jpg" class="cert-img" alt="Cert 1"></div>
+        <div class="cert-box"><img src="ethical_hacker_cert.jpg" class="cert-img" alt="Cert 2"></div>
         
-        <h3 style="margin-top:25px;">🦾 ESPECIALIDAD INDUSTRIAL</h3>
+        <h3 style="margin-top:25px;">🦾 ESPECIALIDAD</h3>
         <p style="font-size:0.8em;">> Ing. Industrial (UnADM)</p>
-        <p style="font-size:0.8em;">> Six Sigma & QMS Auditing</p>
-        <p style="font-size:0.8em;">> Hardening de Redes OT</p>
+        <p style="font-size:0.8em;">> Calidad en Manufactura</p>
+        <p style="font-size:0.8em;">> Redes OT / Automatización</p>
     </aside>
 
     <main class="panel main-panel">
         <div class="status-header">[ SYSTEM STATUS: ONLINE ]</div>
         <h1 style="text-align:center; font-size:1.3em; margin:0;">[ MAYNOR VAZQUEZ | CORE SYSTEM ]</h1>
-        <p style="text-align:center; font-size:0.85em; color:#fff;">Cybersecurity Specialist | Industrial Engineer</p>
+        <p style="text-align:center; font-size:0.85em; color:#fff;">Cybersecurity & Industrial Quality Control</p>
 
         <div style="text-align:center; margin:10px 0;">
-            <span class="badge">Nmap</span> <span class="badge">Wireshark</span> 
-            <span class="badge">Python</span> <span class="badge">Metasploit</span>
+            <span class="badge">Nmap</span> <span class="badge">Python</span> 
+            <span class="badge">Metasploit</span> <span class="badge">Kali Linux</span>
         </div>
 
         <b style="color:#0f0; font-size:0.9em;">## 🔍 ARSENAL TÉCNICO</b>
         <table>
-            <tr><th>CATEGORÍA</th><th>TECNOLOGÍAS</th></tr>
-            <tr><td>RECON</td><td>Zenmap, Snmpcheck, Netdiscover</td></tr>
-            <tr><td>PENTESTING</td><td>Evasión de Firewalls, Metasploit</td></tr>
-            <tr><td>DESARROLLO</td><td>Python Automation, FastAPI, MayNexus</td></tr>
+            <tr><th>CATEGORÍA</th><th>SKILLS ACTIVOS</th></tr>
+            <tr><td>RECON</td><td>Escaneo de puertos & Vulnerabilidades</td></tr>
+            <tr><td>PENTESTING</td><td>Ataques Man-in-the-Middle, Evasión</td></tr>
+            <tr><td>DESARROLLO</td><td>Scripting en Python para Automatización</td></tr>
         </table>
 
-        <b style="color:#0f0; font-size:0.9em;">### 🛰️ PROYECTOS ACTIVOS</b>
-        <div style="margin-top:10px;">
-            <p style="font-size:0.85em; margin:0;"><strong>> Network Auditor v1.0:</strong></p>
-            <p style="font-size:0.8em; color:#ccc;">Script de Python que genera reportes de vulnerabilidades en tiempo real.</p>
-            <a href="reporte_red.html" target="_blank" class="project-link">[ EJECUTAR REPORTE TÁCTICO ]</a>
+        <b style="color:#0f0; font-size:0.9em;">### 🛰️ PROYECTOS_DE_AUDITORÍA</b>
+        <div style="margin-top:10px; border: 1px dashed #0f0; padding: 10px;">
+            <p style="font-size:0.85em; margin:0;"><strong>> MayNexus Network Auditor v1.2:</strong></p>
+            <p style="font-size:0.8em; color:#ccc; margin: 5px 0;">Herramienta Python que mapea nodos de red y detecta servicios abiertos de forma anónima.</p>
+            <a href="reporte_red.html" target="_blank" class="project-link">[ EJECUTAR REPORTE SEGURO ]</a>
         </div>
 
-        <div class="terminal-box">
-            <p>> [2026-04-10] SYSTEM: Enlace a reporte_red.html activo.</p>
-            <p>> [LOG]: MayNexus Deployment... <span class="cursor">█</span></p>
+        <div class="terminal-box" id="log-terminal">
+            <p style="color: #f0f;">> [SYSTEM]: Iniciando secuencia de monitoreo...</p>
         </div>
     </main>
 
     <aside class="panel">
         <h3>⚠️ CONSEJOS (CYBER-TIPS)</h3>
-        <p style="font-size:0.8em;"><strong>> MFA:</strong> Doble factor en todo.</p>
-        <p style="font-size:0.8em;"><strong>> VPN:</strong> Túneles cifrados en redes públicas.</p>
-        <p style="font-size:0.8em;"><strong>> PASS:</strong> Uso de gestores (Bitwarden).</p>
+        <p style="font-size:0.8em;"><strong>> MFA:</strong> Activa autenticación de dos pasos.</p>
+        <p style="font-size:0.8em;"><strong>> VPN:</strong> Encripta tu tráfico en redes Wi-Fi.</p>
+        <p style="font-size:0.8em;"><strong>> UPDATES:</strong> Parchea tus sistemas diario.</p>
 
-        <h3 style="margin-top:30px;">#### PROYECTOS_ADICIONALES</h3>
-        <p style="font-size:0.8em;">> Automatización Auditorías Python</p>
-        <p style="font-size:0.8em;">> Evasión de Firewalls (Bypass)</p>
-        <p style="font-size:0.8em;">> Inspección de Calidad GD&T</p>
+        <h3 style="margin-top:30px;">#### LOGS_DEL_SISTEMA</h3>
+        <p style="font-size:0.8em;">> Vigilancia de Red Activa</p>
+        <p style="font-size:0.8em;">> Integridad de Datos OK</p>
+        <p style="font-size:0.8em;">> User: Maynor_Admin</p>
     </aside>
 </div>
 
 <script>
+    // --- 1. EFECTO MATRIX ---
     const canvas = document.getElementById('matrix-canvas');
     const ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth; canvas.height = window.innerHeight;
@@ -131,7 +144,7 @@
     const fontSize = 16;
     const columns = canvas.width / fontSize;
     const drops = Array(Math.floor(columns)).fill(1);
-    function draw() {
+    function drawMatrix() {
         ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         ctx.fillStyle = "#0F0";
@@ -143,7 +156,33 @@
             drops[i]++;
         }
     }
-    setInterval(draw, 35);
+    setInterval(drawMatrix, 35);
+
+    // --- 2. LOGS ANIMADOS ---
+    const terminal = document.getElementById('log-terminal');
+    const logs = [
+        "[OK] Firewall Rules Updated...",
+        "[WARN] Brute force attempt from 192.168.*.* blocked",
+        "[OK] Network scan complete: 0 vulnerabilities.",
+        "[INFO] MayNexus Core: Heartbeat 100%",
+        "[SCAN] Analyzing Port 443...",
+        "[OK] Encryption keys rotated.",
+        "[INFO] New device anonymized: 192.168.0.*",
+        "[STATUS] System load: 2% | Security: High"
+    ];
+
+    function addLog() {
+        const newLog = document.createElement('p');
+        const now = new Date();
+        const time = `[${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}]`;
+        const message = logs[Math.floor(Math.random() * logs.length)];
+        newLog.innerHTML = `> ${time} ${message}`;
+        terminal.appendChild(newLog);
+        terminal.scrollTop = terminal.scrollHeight;
+        if (terminal.children.length > 8) terminal.removeChild(terminal.children[1]);
+    }
+    setInterval(addLog, 4000);
+
     window.onresize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
 </script>
 </body>
