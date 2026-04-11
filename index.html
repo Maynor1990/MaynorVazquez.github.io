@@ -2,193 +2,95 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAYNOR VAZQUEZ | CORE SYSTEM</title>
     <style>
-        /* Estilos Base Estilo Terminal */
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            font-family: 'Courier New', Courier, monospace;
-            color: #00FF00; /* Verde Matrix */
-            overflow-x: hidden;
-        }
-
-        /* Iframe del Fondo Matrix - NO MODIFICAR ESTO */
-        .matrix-bg {
+        body { margin: 0; background: black; font-family: 'Courier New', monospace; color: #00FF00; overflow: hidden; }
+        
+        /* El motor de Matrix */
+        #matrix-canvas {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            z-index: -1;
-            opacity: 0.25; /* Transparencia para que el texto sea legible */
+            z-index: 1; /* Al fondo */
+            opacity: 0.2;
         }
 
-        /* Contenedor Principal */
-        .content {
-            max-width: 900px;
-            margin: 50px auto;
-            background: rgba(0, 0, 0, 0.85); /* Fondo negro profundo con transparencia */
-            padding: 30px;
+        /* Tu contenido real */
+        .container {
+            position: relative;
+            z-index: 2; /* Arriba del fondo */
+            max-width: 850px;
+            margin: 2% auto;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 25px;
             border: 2px solid #00FF00;
             box-shadow: 0 0 20px #00FF00;
-            border-radius: 5px;
         }
 
-        h1, h2, h3 {
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border-bottom: 1px solid #00FF00;
-            padding-bottom: 10px;
-        }
-
-        .status-bar {
-            background: #00FF00;
-            color: black;
-            padding: 5px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .badges-container {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .badge {
-            background: #004400;
-            color: #00FF00;
-            padding: 5px 15px;
-            border-radius: 3px;
-            font-size: 0.9em;
-            margin: 5px;
-            display: inline-block;
-            border: 1px solid #00FF00;
-        }
-
-        .section-header {
-            color: #f0f; /* Magenta para resaltar secciones */
-            margin-top: 30px;
-            text-align: left;
-            border-bottom: none;
-        }
-
-        /* Estilos para la tabla de arsenal */
-        .arsenal-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 0.9em;
-        }
-
-        .arsenal-table th, .arsenal-table td {
-            text-align: left;
-            padding: 10px;
-            border: 1px solid #004400;
-        }
-
-        .arsenal-table th {
-            color: #f0f; /* Magenta */
-            text-transform: uppercase;
-        }
-
-        .arsenal-table strong {
-            color: #fff; /* Blanco para los nombres de herramientas */
-        }
-
-        /* Estilos para los logs de terminal */
-        .terminal-box {
-            background: #001100;
-            padding: 15px;
-            border-radius: 5px;
-            font-size: 0.85em;
-            margin-top: 20px;
-            border: 1px solid #003300;
-            overflow-x: auto;
-        }
-
-        /* Animación de parpadeo para el cursor */
-        .cursor {
-            animation: blink 1s infinite;
-        }
-        @keyframes blink {
-            50% { opacity: 0; }
-        }
+        .status-bar { background: #00FF00; color: black; text-align: center; font-weight: bold; padding: 5px; margin-bottom: 15px; }
+        h1 { text-align: center; border-bottom: 1px solid #00FF00; padding-bottom: 10px; }
+        .stats { display: flex; justify-content: space-around; margin: 15px 0; font-size: 0.8em; }
+        .badge { border: 1px solid #00FF00; padding: 3px 10px; margin: 5px; display: inline-block; font-size: 0.8em; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9em; }
+        th, td { border: 1px solid #004400; padding: 8px; text-align: left; }
+        th { color: #f0f; }
+        .terminal { background: #001100; padding: 15px; font-size: 0.8em; border-radius: 5px; margin-top: 15px; }
+        .cursor { animation: blink 1s infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
     </style>
 </head>
 <body>
 
-    <iframe src="matrix.html" class="matrix-bg"></iframe>
+    <canvas id="matrix-canvas"></canvas>
 
-    <div class="content">
+    <div class="container">
         <div class="status-bar">[ SYSTEM OPERATIONAL | SECURED ]</div>
         
         <h1>[ MAYNOR VAZQUEZ | CORE SYSTEM ] <span class="cursor">█</span></h1>
-        <p style="text-align: center; color: #fff;">Quality Inspector Expert (Stryker - 14 Years) | Cybersecurity Specialist | Python Developer</p>
+        <p style="text-align: center;">Quality Inspector Expert (Stryker - 14 Years) | Cybersecurity Specialist | Python Developer</p>
 
-        <div class="badges-container">
-            <span class="badge">KALI LINUX</span>
-            <span class="badge">CISCO ACADEMY</span>
-            <span class="badge">UNADM</span>
-            <span class="badge">INDUSTRIAL ENG</span>
+        <div style="text-align: center;">
+            <span class="badge">KALI LINUX</span> <span class="badge">CISCO ACADEMY</span> 
+            <span class="badge">UNADM</span> <span class="badge">INDUSTRIAL ENG</span>
         </div>
 
-        <h3>🛡️ Arsenal Técnico & Habilidades</h3>
-        <table class="arsenal-table">
-            <tr>
-                <th>Categoría</th>
-                <th>Herramientas y Tecnologías</th>
-            </tr>
-            <tr>
-                <td><strong>RECONOCIMIENTO:</strong></td>
-                <td>Nmap, Wireshark, Snmpwalk, Netdiscover</td>
-            </tr>
-            <tr>
-                <td><strong>PENTESTING:</strong></td>
-                <td>Metasploit, SQLmap, Hydra, Evasión de Firewall (bypass)</td>
-            </tr>
-            <tr>
-                <td><strong>DESARROLLO:</strong></td>
-                <td>Python (Automatización de Auditorías), FastAPI, MayNexus App</td>
-            </tr>
-            <tr>
-                <td><strong>INDUSTRIAL:</strong></td>
-                <td>Inspección de Calidad (Medical Devices), Six Sigma, GD&T</td>
-            </tr>
+        <table>
+            <tr><th>CATEGORÍA</th><th>HERRAMIENTAS Y TECNOLOGÍAS</th></tr>
+            <tr><td>RECONOCIMIENTO</td><td>Nmap, Wireshark, Snmpwalk, Netdiscover</td></tr>
+            <tr><td>PENTESTING</td><td>Metasploit, SQLmap, Hydra, Evasión de Firewall</td></tr>
+            <tr><td>DESARROLLO</td><td>Python (Automation), FastAPI, MayNexus App</td></tr>
+            <tr><td>INDUSTRIAL</td><td>Inspección de Calidad, Six Sigma, GD&T</td></tr>
         </table>
 
-        <h3>🛰️ Proyectos Destacados</h3>
-        <ul>
-            <li>
-                <strong>Auditoría de Resiliencia de Red (192.168.0.x)</strong>
-                <p style="font-size: 0.9em; margin-top: 5px;">Mapeo de hosts ocultos y evasión de firewalls restrictivos usando técnicas de Capa 2 (ARP).</p>
-            </li>
-            <li>
-                <strong>Escáner Automático Industrial en Python</strong>
-                <p style="font-size: 0.9em; margin-top: 5px;">Herramienta para automatizar el reconocimiento de activos en redes OT y generar reportes de vulnerabilidades.</p>
-            </li>
-        </ul>
-
-        <h3>🖥️ Logs de Actividad Reciente</h3>
-        <div class="terminal-box">
-<pre>
-[2026-04-10 14:00] > DEPLOY: Cyber-Tips integrados al dashboard.
-[2026-04-10 14:15] > UPDATE: Estructura de columnas laterales activada.
-[2026-04-10 14:30] > CONFIG: Migración a Modo Oscuro completada exitosamente.
-[2026-04-10 14:45] > STATUS: Sistema optimizado para auditoría de red (Nmap/ARP).
-[2026-04-10 15:00] > SCANNING: Monitoreo pasivo de red local en progreso...
-</pre>
+        <div class="terminal">
+            <p>> [2026-04-10 14:45] STATUS: Sistema optimizado para auditoría (Nmap/ARP).</p>
+            <p>> [2026-04-10 15:00] SCANNING: Monitoreo pasivo de red local en progreso...</p>
         </div>
-
-        <p style="text-align: center; font-size: 0.7em; margin-top: 50px; color: #004400;">
-            © 2026 MayNexus Operations - Todos los derechos reservados.
-        </p>
     </div>
 
+    <script>
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        const chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿ";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array(Math.floor(columns)).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "#0F0";
+            ctx.font = fontSize + "px monospace";
+            for (let i = 0; i < drops.length; i++) {
+                const text = chars[Math.floor(Math.random() * chars.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                drops[i]++;
+            }
+        }
+        setInterval(draw, 35);
+    </script>
 </body>
 </html>
